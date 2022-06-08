@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100;300;400;500;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Heebo', sans-serif;
+}
+
+body{
+    margin-top: auto;
+    margin: 0;
+    padding: 0;
+    background: #00e2ed;
+}
+
+header {
+    padding: 10px;
+    width: 100%;
+    /*overflow: hidden;*/ 
+    color: #fff;
+    background: #111114;
+    font-size: small;
+    display: flex;
+}
+
+header nav{
+    color: #00e2ed;
+}
+
+/* :::========== FIN NAV ==========::: */
+
+.container-all {
+    max-width: 1000px;
+    margin:auto;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+}
+
+header .logo {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.container-box {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+}
+
+.container-box a{
+    text-decoration: none;
+    color: #00e2ed;
+}
+
+.box-nav{
+
+    width: 70px;
+    height: 20px;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    border-radius: 5%;
+    box-shadow: 0 0 0 1px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all 300ms;
+}
+
+.box-nav:hover {
+    /*transform: translate(0px, -5px);*/
+    box-shadow: -10px 10px 20px -10px rgba(253, 253, 253, 0.452);
+}
+
+.box-nav .icon, /*Icono, título y párrafo del box*/
+.box-nav h5,
+.box-nav p{
+    position: relative;
+    transition: all 200ms;
+}
+
+
+.box-nav h5,
+.box-nav p{
+    margin-top: 10px;
+}
+
+.box-nav h5{
+    color: #00e2ed;
+    font-size: 30px;
+    transform: translateY(30px);
+}
+
+.box-nav:hover h5{
+    transform: translateY(0);
+}
+
+.box-nav p{
+    font-size: 14px;
+    transform: translateY(100px);
+    opacity: 0;
+}
+
+.box-nav:hover p{
+    margin-top: 10px;
+    transform: translateY(0);
+    opacity: 1;
+}
+
+/*.box .background-hover{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 250px;
+    left: -170px;
+    background: black;
+    border-radius: 50%;
+    transition: all 300ms;
+    background: linear-gradient(to bottom, rgb(73, 73, 73), black);
+}
+
+.box:hover .background-hover{
+    width: 400px;
+    height: 400px;
+    top: -70px;
+    left: -70px;
+} */
+
+.box-nav:hover .icon, /*Hover del ícono, título y párrafo del box*/
+.box-nav:hover h5,
+.box-nav:hover p{
+    position: relative;
+    z-index: 1;
+    color: #00e2ed;
+    transition: all 500ms;
+}
+
+
+
+/* ===== BOX1 ===== */
+
+
+/*
+.box-nav .background-hover{
+    background: linear-gradient(to bottom, rgb(255, 255, 255), rgb(0, 0, 0));
+}*/
+
+.box-nav .background-hover{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 120px;
+    left: -170px;
+    background: rgb(255, 255, 255);
+    border-radius: 50%;
+    transition: all 300ms;
+    background: linear-gradient(to bottom, #00e2ed, #00e2ed);
+}
+
+.box-nav:hover .background-hover{
+    width: 400px;
+    height: 400px;
+    top: -70px;
+    left: -70px;
+}
+
+
+/* :::========== HEADER ==========::: */
+
+
+
+header .pond {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+
+
+/* :::========== H4 ==========::: */
+
+.main-title {
+  text-align: center;
+  font-size: 40px;
+}
+
+/* :::========== MEDIA SCREEN ==========::: */

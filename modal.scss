@@ -1,0 +1,25 @@
+@import "../VictorRobles/node_modules/bootstrap/scss/functions";
+@import "../VictorRobles/node_modules/bootstrap/scss/variables";
+@import "../VictorRobles/node_modules/bootstrap/scss/mixins";
+
+// Create your own map
+$custom-colors: (
+    "custom-color": rgb(55, 55, 55)
+);
+
+// Merge the maps
+$theme-colors: map-merge($theme-colors, $custom-colors );
+
+$primary: #00e2ed;
+$danger: #ab17ff;
+$dark: #000000;
+$verde: rgb(1, 170, 120);
+
+$theme-colors: (
+  "primary": $primary,
+  "danger": $danger,
+  "dark": $dark,
+  "verde": $verde,
+);
+
+@import "../VictorRobles/node_modules/bootstrap/scss/bootstrap.scss";
